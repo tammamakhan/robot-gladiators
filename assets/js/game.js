@@ -5,6 +5,7 @@ var randomNumber = function (min, max) {
   return value;
 };
 
+// define player object
 var playerInfo = {
   name: prompt("What is your robot's name?"),
   health: 100,
@@ -35,6 +36,7 @@ var playerInfo = {
   },
 };
 
+// define array of enemy objects
 var enemyInfo = [
   {
     name: "Roborto",
@@ -50,6 +52,7 @@ var enemyInfo = [
   },
 ];
 
+// function to fight a given enemy
 var fight = function (enemy) {
   while (playerInfo.health > 0 && enemy.health > 0) {
     // ask player if they'd like to fight or run
@@ -126,6 +129,7 @@ var fight = function (enemy) {
   }
 };
 
+// function to allow the player to shop
 var shop = function () {
   // ask player what they'd like to do
   var shopOptionPrompt = prompt(
@@ -157,6 +161,7 @@ var shop = function () {
   }
 };
 
+// function to start game
 var startGame = function () {
   // reset player stats
   playerInfo.reset();
